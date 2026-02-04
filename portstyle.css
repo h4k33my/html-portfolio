@@ -1,0 +1,181 @@
+.gradient-background {
+    background: linear-gradient(300deg, #ff4c68, #ef8172, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+.gradient-background1 {
+    background: linear-gradient(300deg, #ff4c68, #ef8172,#00bfff);
+    background-size: 100% 100%;
+    animation: gradient-animation 14s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+
+.eb-garamond-regular {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.eb-garamond-italic {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.eb-garamond-bold {
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lobster-two-regular-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lobster-two-bold-italic {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+#name {
+    height: max-content;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 0;
+    font-size: 4.5rem;
+}
+
+.pp{
+    font-size: 3rem;
+}
+
+.heading{
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.projects{
+  padding-bottom: 3rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+@media (max-width: 550px) {
+  #name {
+    font-size: 2.6rem;
+  }
+  .pp{
+    font-size: 2.2rem;
+  }
+  .heading{
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .projects{
+    padding-bottom: 1.5rem;
+  }
+}
+#name::before {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #00bfff;
+    transition: left 0.8s ease-in-out;
+    z-index: -1;
+    animation: slide 2s ease-in-out;
+}
+
+
+
+@keyframes slide {
+  0%{
+    left: -90%;
+  }
+
+  50%{
+    left: 90%;
+  }
+
+  100%{
+left: -100%;
+  }
+}
+
+#name:hover::before {
+    left: 100%;
+}
+.greetings{
+    
+    font-size: 4rem;
+}
+
+.programmer{
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+    font-size: 3rem;
+}
+
+
+.profile-pic{
+    border-radius: 100% 100% 100% 100%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+
+}
+
+ul{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-evenly; 
+    align-self: center; 
+    height: 120px;
+}
+
+span{
+    font-weight: bold;
+}
