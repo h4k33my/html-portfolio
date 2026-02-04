@@ -100,6 +100,11 @@
 h2{
   font-size: 2rem;
 }
+
+.lead{
+  text-align: justify;
+}
+
 @media (max-width: 550px) {
   #name {
     font-size: 2.6rem;
@@ -113,6 +118,9 @@ h2{
   }
   .projects{
     padding-bottom: 1.5rem;
+  }
+  .lead{
+    text-align: left;
   }
 }
 #name::before {
@@ -178,4 +186,14 @@ ul{
 
 span{
     font-weight: bold;
+}
+
+.baby-pic{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+.baby-text{
+text-align: center;
 }
